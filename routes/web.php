@@ -14,3 +14,7 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/about', ['as' => 'about-us', 'uses' => function () {
+    return view('about');
+}]);
