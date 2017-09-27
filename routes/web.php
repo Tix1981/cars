@@ -25,3 +25,5 @@ Route::get('/about', ['as' => 'about-us', 'uses' => function () {
     return view('about');
 
 }]);
+
+Route::get('/cars', 'CarsController@index');
