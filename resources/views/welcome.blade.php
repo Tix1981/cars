@@ -5,6 +5,7 @@
         <title>Cars</title>
     </head>
     <body>
-        <h1>Welcome to cars project</h1>
+        <h1>Welcome {{ $name }}</h1>
+        <p>I'm {{ $age }} years old</p>
     </body>
 </html>
