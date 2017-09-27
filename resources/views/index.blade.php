@@ -7,7 +7,7 @@
     <body>
         <ul>
             @foreach ($cars as $car)
-                <li>{{ $car->title }}</li>
+                <li><a href="{{ route('single-car', ['id' => $car->id]) }}">{{ $car->title }}</a></li>
             @endforeach
         </ul>
     </body>
