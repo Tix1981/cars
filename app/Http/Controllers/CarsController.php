@@ -11,7 +11,7 @@ class CarsController extends Controller
 
         $cars = Car::all();
 
-        return view('index', compact('cars'));
+        return view('cars.index', compact('cars'));
 
     }
 
@@ -19,7 +19,7 @@ class CarsController extends Controller
 
         $car = Car::find($id);
 
-        return view('show', compact('car'));
+        return view('cars.show', compact('car'));
 
     }
 }

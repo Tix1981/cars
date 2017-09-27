@@ -26,6 +26,6 @@ Route::get('/about', ['as' => 'about-us', 'uses' => function () {
 
 }]);
 
-Route::get('/cars', 'CarsController@index');
+Route::get('/cars', ['as' => 'all-cars', 'uses' => 'CarsController@index']);
 
 Route::get('/cars/{id}', ['as' => 'single-car', 'uses' => 'CarsController@show']);
